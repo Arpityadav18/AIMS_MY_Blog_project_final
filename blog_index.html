@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMS JOB HUB Blog for Review Service/Product</title>
+    <link rel="stylesheet" href="CSS/newutils.css">
+    <link rel="stylesheet" href="CSS/newstyle.css">
+    <link rel="stylesheet" href="CSS/mobileslide.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/blogpost.css">
+    <link rel="stylesheet" href="CSS/readus.css">
+    <link rel="stylesheet" href="CSS/blog_index.css">
+    <link rel="stylesheet" href="CSS/blog_index_editor.css">
+    <link rel="stylesheet" href="CSS/createbloghome.css">
+
+</head>
+
+<body>
+
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="img/Logo.jpg" width="94px" alt="" /></span>
+            </a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Article Search" />
+                <button class="btn">Search</button>
+            </form>
+        </div>
+
+    </nav>
+
+    <section class="blogs-post">
+        <div class="bloger-post">
+            <div class="para">
+                <img src="img/2.jpg" class="blog-image" alt="">
+
+            </div>
+
+    </section>
+
+    <hr>
+    <br>
+
+    <div class="input">
+
+        <div class="uploadimg">
+            Upload Image Here :
+            <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+            <button class="UIB"><p><label for="file" style="cursor: pointer;">Upload Image</label></p></button>
+           
+        </div>
+
+        <br>
+
+        <div class="input">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+            <input type="date" id="date" placeholder="Date"><br>
+            <textarea name="massage" id="massage" cols="10" rows="5">Article Write here!</textarea>
+        </div>
+
+
+    </div>
+
+    <div class="main-btn">
+    <button class="btn" onclick="adduser()">Submit</button><br><br>
+    </div>
+
+
+
+    <h3 class="apsh">Article Post Show here:</h3>
+    <div class="left">
+     <p><img class="outputimg" id="output" width="200" /></p>
+    </div>
+
+    <div class="right">
+     <div id="result"></div>
+    </div>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto font2">
+
+    </div>
+
+
+
+        <div class="footer">
+                    <p>Copyright &copy; AIMS JOB HUB Pvt Ltd Blog.com </p>
+                  
+        </div>
+        
+
+
+        <script src="js/blog_index.js"></script>
+
+
+</body>
+
+</html>
